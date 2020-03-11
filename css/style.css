@@ -207,36 +207,49 @@ body {
     margin-bottom: 27px;
 }
 
-.box-text{
+.box-text {
     max-width: 530px;
 }
 
-.box-icon{
+.box-icon {
     width: 152px;
     height: 152px;
     font-size: 40px;
     background-image: url(../img/gray.png);
     background-position: center center;
-    margin: 0 auto 26px; 
+    margin: 0 auto 26px;
     color: #000000;
     line-height: 3.5;
 }
 
-.box-item:hover .box-icon{
+.box-item:hover .box-icon {
     background-image: url(../img/blue.png);
     color: #fff;
     transition-delay: 0.3s;
 }
-.box-icon-pen{
+
+.box-icon-pen {
     font-size: 30px;
     line-height: 5;
+}
+
+.box-icon-min{
+    font-size: 24px;
+    width: 96px;
+    height: 96px;
+    background-size: 96px 96px;
+    flex-basis: 96px;
+    text-align: center;
+    line-height: 3.8;
+    margin: initial;
+        
 }
 
 .page-line {
     border-bottom: 1px solid #e4e4e4;
 }
 
-.page-gray{
+.page-gray {
     background-color: #fafafa;
     padding: 100px 0 62px 0;
 }
@@ -316,34 +329,34 @@ body {
     bottom: 0;
 }
 
-.btn-blue{
+.btn-blue {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
-    background-color:#30a3f0; 
+    background-color: #30a3f0;
     border: 1 px solid #30a3f0;
-    padding: 21px 39px ;
+    padding: 21px 39px;
     border-radius: 5px;
 }
 
-.btn-blue:hover{
+.btn-blue:hover {
     text-transform: uppercase;
     text-decoration: none;
     color: #30a3f0;
-    background-color:#fff; 
+    background-color: #fff;
     border: 1px solid #30a3f0;
-    padding: 21px 39px ;
+    padding: 21px 39px;
     border-radius: 5px;
     transition-delay: 0.2s;
 }
 
-.box-text{
+.box-text {
     max-width: 530px;
 }
 
-.page-mockup{
+.page-mockup {
     margin-top: 100px;
     padding-bottom: 100px;
 }
@@ -353,7 +366,7 @@ body {
     margin: 0 auto;
 }
 
-.line-center{
+.line-center {
     display: block;
     width: 90px;
     height: 14px;
@@ -362,38 +375,38 @@ body {
     margin: 0 auto 30px;
 }
 
-.photo{
+.photo {
     display: flex;
 }
 
-.photo-item{
+.photo-item {
     overflow: hidden;
     flex-basis: 20%;
     position: relative;
     height: 350px;
 }
 
-.photo-item img{
+.photo-item img {
     width: 100%;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     object-fit: cover;
     height: 350px;
     z-index: -1;
 }
 
-.photo-text{
+.photo-text {
     position: absolute;
     text-align: center;
     width: 100%;
     top: calc(50% - 30px);
     display: none;
-    
+
 }
 
-.photo-text h3{
+.photo-text h3 {
     font-size: 22px;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
@@ -403,55 +416,82 @@ body {
     margin-top: 0;
 }
 
-.photo-text p{
+.photo-text p {
     color: #707070;
     margin-bottom: 0;
 }
 
-.photo-item:hover .photo-text{
+.photo-item:hover .photo-text {
     display: block;
 }
 
 .photo-item:hover {
-    background-color: rgba(34,34,34,0.8)
+    background-color: rgba(34, 34, 34, 0.8)
 }
 
-.photo-btn{ 
+.photo-btn {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     position: absolute;
     height: 350px;
     width: 100%;
-    align-items: flex-end; 
+    align-items: flex-end;
 }
 
-.photo-btn a{
+.photo-btn a {
     display: none;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     background-color: #fff;
     width: 60px;
-    height: 60px;  
+    height: 60px;
 }
 
-.photo-btn:hover a{
+.photo-btn:hover a {
     display: flex;
     width: 60px;
     height: 60px;
-    align-items: center; 
-    color:#222222;
+    align-items: center;
+    color: #222222;
 }
 
-.photo-btn a:hover{
+.photo-btn a:hover {
     background-color: #30a3f0;
     color: #fff;
 }
 
+.grid {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    grid-gap: 70px 50px;
+    margin: 124px 0 127px 0;
+}
 
+.grid h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 22px;
+    margin-top: 0;
+}
 
+.grid .description {
+    margin-bottom: 0;
+}
 
+.grid-line {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
 
+.grid-line-text{
+    flex-basis: calc(100% - 126px);
+}
 
-
-
-
+.box-icon-min:hover{
+    color: #fff;
+    background-image: url(../img/blue-min.png);
+    transition-delay: 0.2s;
+    
+}
