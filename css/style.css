@@ -101,7 +101,10 @@ body {
 
 .nav-item {
     margin-left: 8px;
+}
 
+.nav-item:first-child {
+    margin-left: 0;
 }
 
 .nav-link {
@@ -135,6 +138,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 7px;
 }
 
 .nav-item-btn {
@@ -268,7 +272,6 @@ body {
 
 .page-company {
     background-color: #fdfdfd;
-    padding-top: 100px;
     padding-bottom: 100px;
 }
 
@@ -332,7 +335,7 @@ body {
 
 .info-link svg {
     color: #30a3f0;
-    margin-right: 11px;
+    margin-right: 9px;
 }
 
 .mockup {
@@ -629,6 +632,7 @@ body {
 
 .screen {
     margin-top: 57px;
+    width: 100%;
 }
 
 .page-stat {
@@ -794,6 +798,7 @@ body {
     height: 30px;
     border-radius: 8px;
     border: none;
+    align-items: center;
 }
 
 
@@ -951,3 +956,356 @@ body {
     color: rgba(255, 255, 255, 0.3);
     font-size: 14px;
 }
+
+@media(max-width:1380px) {
+    .mockup {
+        width: 500px;
+        height: 447px;
+        right: 30px;
+    }
+}
+
+
+@media(max-width:1300px) {
+    .wrapper {
+        max-width: 900px;
+    }
+
+    .head {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 23px 40px 23px;
+    }
+
+    .nav {
+        margin-top: 28px;
+    }
+
+    .box-item {
+        padding: 60px 30px 60px;
+    }
+
+    .mockup {
+        width: 388px;
+        height: 346px;
+        right: 15px;
+    }
+
+    .blog {
+        grid-template: 1fr 1fr 1fr 1fr / 1fr;
+    }
+
+}
+
+@media(max-width:992px) {
+    .wrapper {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+
+    .header {
+        padding-bottom: 80px;
+    }
+
+    .head {
+        padding: 23px 40px 16px;
+        margin-bottom: 80px;
+    }
+
+    .nav-item-btn {
+        margin-left: 15px;
+    }
+
+    .nav-link,
+    .nav-link:active {
+        padding: 6px 10px 9px;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        margin-bottom: 11px;
+
+    }
+
+    nav {
+        flex-basis: 100%;
+    }
+
+    .nav {
+        justify-content: center;
+        margin: 19px auto 0;
+        flex-wrap: wrap;
+    }
+
+    .title h1 {
+        font-size: 35px;
+        line-height: 47px;
+        max-width: 552px;
+    }
+
+    .title p {
+        font-size: 16px;
+    }
+
+    .btn,
+    .btn-blue {
+        font-size: 12px;
+    }
+
+    title h1 {
+        font-size: 35px;
+        line-height: 47px;
+        max-width: 552px;
+    }
+
+    .title p {
+        font-size: 16px;
+    }
+
+    .title h2 span {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .box-text {
+        width: 100%;
+    }
+
+    .box-stat h3 span {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .box-stat h3 {
+        font-size: 35px;
+    }
+
+    .photo {
+        flex-wrap: wrap;
+    }
+
+    .photo-item {
+        flex-basis: 50%;
+        flex-wrap: wrap;
+        height: 250px;
+    }
+
+    .photo-item:last-child,
+    .grid-item:last-child,
+    .mockup {
+        display: none;
+    }
+
+    .grid {
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+    }
+
+    .team {
+        flex-wrap: wrap;
+    }
+
+    .team-item {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .team-thumb {
+        margin: 0 auto 39px;
+    }
+
+    .team-thumb,
+    .team-thumb img {
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .team-social {
+        margin-top: 11px;
+    }
+
+    .footer-text {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+
+}
+
+@media(max-width:978px) {
+    .nav-top {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+
+    .info {
+        margin-top: 0;
+    }
+
+    .page-line {
+        border-bottom: none;
+    }
+
+    .box {
+        flex-direction: column;
+        border-left: none;
+        border-right: none;
+    }
+
+    .box-center {
+        border-left: none;
+        border-right: none;
+    }
+
+    .box-item {
+        padding: 20px 30px 20px;
+        border-bottom: 1px solid #e4e4e4;
+        box-sizing: content-box;
+    }
+
+    .box .box-icon {
+        display: none;
+    }
+
+    .box-item-center {
+        border-left: none;
+        border-right: none;
+    }
+}
+
+@media(max-width:320px) {
+    .info-left .info-item:first-child {
+        display: none;
+    }
+
+    .info-left .info-item {
+        margin: 0 auto;
+    }
+
+    .info-left .info-item svg {
+        padding-left: 3px;
+    }
+
+    .element-top,
+    .element-bottom {
+        height: 30px;
+    }
+
+    .head {
+        margin-bottom: 20px;
+    }
+
+    .page-gray {
+        background-color: #fafafa;
+        padding-top: 30px;
+    }
+
+
+    .page-mockup {
+        margin-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .btn-blue {
+        padding: 15px 30px;
+        margin-left: 40px;
+    }
+
+    .photo-item {
+        margin-bottom: 0;
+    }
+
+    .photo-item h3 {
+        font-size: 16px;
+    }
+
+    .photo-item p {
+        font-size: 14px;
+    }
+
+    .photo-item:nth-child(1),
+    .photo-item:nth-child(4) {
+        display: none;
+    }
+
+    .grid {
+        padding-top: 0px;
+        grid-template: 1fr / 1fr;
+        grid-gap: 20px;
+        margin: 30px 0 20px 0;
+    }
+
+    .page-team {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .page-bg {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .page-stat {
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .box-stat {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .box-stat-item {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .blog {
+        grid-template: 1fr / 1fr;
+        grid-gap: 10px;
+        margin-top: 10px;
+    }
+
+    .thumb-blog,
+    .blog-share {
+        display: none;
+    }
+
+    .blog .text-blog {
+        flex-basis: 100%;
+        padding: 10px
+    }
+
+    .page-company {
+        display: none;
+    }
+
+    .page-blog {
+        padding-bottom: 20px;
+    }
+
+    .footer-list {
+        display: grid;
+        grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+        grid-gap: 15px;
+    }
+
+    .footer-list > li {
+        padding-left: 0px;
+        margin-left: 0px;
+        border-left: none;
+        text-decoration: underline;
+    }
+
+    .footer-bg {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .team {
+        margin-top: 20px;
